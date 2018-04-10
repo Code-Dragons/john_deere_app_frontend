@@ -1,3 +1,42 @@
 .container {
+  width: 100vw;
   font-family: "Abel", sans-serif;
+  display: flex;
+  flex-direction: column;
+  .header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../assets/jd_image.jpg");
+    .header-top-content {
+      display: flex;
+      justify-content: flex-end;
+      color: #fdde33;
+      font-size: 1rem;
+      margin: 2rem 2rem 0 0;
+      .header-top-content-login {
+        margin-right: 1rem;
+        h2 {
+          border-right: 2px solid #fdde33;
+          padding-right: 1rem;
+        }
+      }
+    }
+    .header-center-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 12rem;
+      p {
+        color: #fdde33;
+        font-size: 30px;
+      }
+      .header-button {
+        color: #fdde33;
+        padding: 0.5rem 4rem 0.5rem 4rem;
+        margin-top: 2rem;
+        border-radius: 1.8rem;
+        border: 2px solid #fdde33;
+      }
+    }
+  }
 }
