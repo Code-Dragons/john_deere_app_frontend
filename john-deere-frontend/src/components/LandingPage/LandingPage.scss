@@ -15,10 +15,16 @@
       margin: 2rem 2rem 0 0;
       .header-top-content-login {
         margin-right: 1rem;
+        a {
+          color: #fdde33;
+        }
         h2 {
           border-right: 2px solid #fdde33;
           padding-right: 1rem;
         }
+      }
+      a {
+        color: #fdde33;
       }
     }
     .header-center-content {
@@ -28,10 +34,13 @@
       margin-top: 12rem;
       p {
         color: #fdde33;
-        font-size: 30px;
+        font-size: 33px;
+        letter-spacing: 0.3rem;
+        text-align: center;
       }
       .header-button {
         color: #fdde33;
+        font-size: 23px;
         padding: 0.5rem 4rem 0.5rem 4rem;
         margin-top: 2rem;
         border-radius: 1.8rem;

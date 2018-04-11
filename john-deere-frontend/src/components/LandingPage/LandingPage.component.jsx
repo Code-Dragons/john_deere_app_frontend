@@ -1,5 +1,7 @@
 import React from "react";
 import "./LandingPage.css";
+import { Link, Route, Switch } from "react-router-dom";
+
 class LandingPage extends React.Component {
   render() {
     return (
@@ -7,9 +9,17 @@ class LandingPage extends React.Component {
         <div className="header">
           <div className="header-top-content">
             <div className="header-top-content-login">
-              <h2>LOGIN</h2>
+              <h2>
+                <Link to="/signin" style={{ textDecoration: "none" }}>
+                  LOGIN
+                </Link>
+              </h2>
             </div>
-            <h2>REGISTER</h2>
+            <h2>
+              <Link to="/signup" style={{ textDecoration: "none" }}>
+                REGISTER
+              </Link>
+            </h2>
           </div>
           <div className="header-center-content">
             <p>
