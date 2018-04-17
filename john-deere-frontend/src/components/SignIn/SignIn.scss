@@ -1,6 +1,25 @@
 .sign-in-container {
   height: 100vh;
   width: 100vw;
-//   background-image: url("../../assets/jd_login.jpg");
-//   background-repeat: no-repeat;
+  background-color: whitesmoke;
+  .sign-in-modal {
+    height: 30rem;
+    width: 40rem;
+    position: absolute;
+    margin: 6rem 0 0 25rem;
+
+    background-color: white;
+    //box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 10px 10px 5px #777;
+  }
+
+  .input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      color: #fdde33;
+      font-size: 1rem;
+    }
+  }
 }

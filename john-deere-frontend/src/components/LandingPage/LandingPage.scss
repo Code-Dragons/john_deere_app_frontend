@@ -1,12 +1,16 @@
 .container {
-  width: 100vw;
+  max-width: 100vw;
   font-family: "Abel", sans-serif;
   display: flex;
   flex-direction: column;
   .header {
     width: 100%;
-    height: 100vh;
+    height: 28rem;
     background-image: url("../../assets/jd_image.jpg");
+    background-position: 30rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
     .header-top-content {
       display: flex;
       justify-content: flex-end;
@@ -15,6 +19,7 @@
       margin: 2rem 2rem 0 0;
       .header-top-content-login {
         margin-right: 1rem;
+
         a {
           color: #fdde33;
         }
@@ -31,7 +36,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 12rem;
+      margin-top: 2rem;
       p {
         color: #fdde33;
         font-size: 33px;
@@ -46,6 +51,80 @@
         border-radius: 1.8rem;
         border: 2px solid #fdde33;
       }
+    }
+  }
+  .team {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      margin: 1rem 0 1rem 35rem;
+      font-size: 2rem;
+      color: #484848;
+      justify-content: center;
+      align-items: center;
+    }
+    .team-three {
+      display: flex;
+      flex-direction: row;
+      .member-info {
+        flex-direction: column;
+        height: 25rem;
+        width: 15rem;
+        margin: 1rem 3rem 1rem 2.7rem;
+        .member {
+          position: relative;
+          height: 11rem;
+          width: 11rem;
+          border-radius: 50%;
+          overflow: hidden;
+          align-items: center;
+
+          box-shadow: 2px 2px 3px 2px rgba(168, 168, 168, 0.4);
+          img {
+            width: 11rem;
+          }
+        }
+        p {
+          text-align: center;
+          color: #7bc556;
+          font-size: 1rem;
+        }
+      }
+    }
+    // .team-two {
+    //   display: flex;
+    //   flex-direction: row;
+    //   .member-info {
+    //     flex-direction: column;
+    //     height: 25rem;
+    //     width: 15rem;
+    //     margin: 1rem 3rem 1rem 2.7rem;
+    //     .member {
+    //       position: relative;
+    //       height: 15rem;
+    //       width: 15rem;
+    //       border-radius: 50%;
+    //       overflow: hidden;
+    //       align-items: center;
+    //       box-shadow: 2px 2px 3px 2px rgba(168, 168, 168, 0.4);
+    //       img {
+    //         width: 15rem;
+    //       }
+    //     }
+    //     p {
+    //       text-align: center;
+    //       color: #fdde33;
+    //     }
+    //   }
+    // }
+  }
+  .contact-us {
+    h2 {
+      margin: 1rem 0 1rem 35rem;
+      font-size: 2rem;
+      color: #484848;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
