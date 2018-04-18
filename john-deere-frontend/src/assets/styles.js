@@ -9,6 +9,9 @@ export default theme => ({
   },
   cancelButton: {
     marginRight: 40,
+    background: "linear-gradient(to right, #fdde33, #7bc556)",
+    color: "white",
+    fontSize: "1rem",
     "&:hover": {
       backgroundColor: "#f9f9f9"
     }
@@ -18,7 +21,6 @@ export default theme => ({
     border: "1px solid #ced4da",
     fontSize: 16,
     padding: "10px 12px",
-    // transition: theme.transitions.create(["border-color", "box-shadow"]),
     "&:focus": {
       borderColor: "black",
       boxShadow: "0"
@@ -26,7 +28,17 @@ export default theme => ({
   },
   userInfoRoot: {
     marginLeft: 20,
+    marginBottom: "1rem",
     width: `27em`,
+    "label + &": {
+      marginTop: theme.spacing.unit * 3
+    }
+  },
+  contactRoot: {
+    marginLeft: 20,
+    marginBottom: "1rem",
+    width: `27em`,
+    height: `13rem`,
     "label + &": {
       marginTop: theme.spacing.unit * 3
     }

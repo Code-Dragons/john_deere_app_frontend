@@ -5,8 +5,14 @@ import styles from "../../assets/styles";
 import { withStyles } from "material-ui";
 import { Button } from "material-ui";
 import Header from "../../common/header/header.component";
+import axios from "axios";
 
 class SignIn extends React.Component {
+  handleSignIn = () => {
+    return axios.get("http://127.0.0.1:8000/api/v1/users/").then(response => {
+      console.log(response);
+    });
+  };
   render() {
     const { classes } = this.props;
 

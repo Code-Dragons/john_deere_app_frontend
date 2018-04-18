@@ -5,6 +5,7 @@ import ebr from "../../assets/allan.jpg";
 import TextField from "material-ui/TextField";
 import styles from "../../assets/styles";
 import { withStyles } from "material-ui";
+import mul from "../../assets/bmulobi1.jpg";
 class LandingPage extends React.Component {
   render() {
     const { classes } = this.props;
@@ -42,7 +43,7 @@ class LandingPage extends React.Component {
           <div className="team-three">
             <div className="member-info">
               <div className="member">
-                <img src={ebr} alt="Felistas" />
+                <img src={mul} alt="Felistas" />
               </div>
               <p>
                 Software developer at <br />Andela Kenya
@@ -81,18 +82,46 @@ class LandingPage extends React.Component {
               </p>
             </div>
           </div>
-          <div className="contact-us">
-            <h2>CONTACT US</h2>
+        </div>
+        <div className="contact-us">
+          <h2>CONTACT US</h2>
+          <div className="contact-content">
+            <div className="names">
+              <TextField
+                placeholder={"FIRST NAME"}
+                InputProps={{
+                  disableUnderline: true,
+                  classes: {
+                    root: classes.userInfoRoot,
+                    input: classes.textFieldInput
+                  }
+                }}
+              />
+              <TextField
+                placeholder={"LAST NAME"}
+                InputProps={{
+                  disableUnderline: true,
+                  classes: {
+                    root: classes.userInfoRoot,
+                    input: classes.textFieldInput
+                  }
+                }}
+              />
+            </div>
+
             <TextField
-              placeholder={"ID NUMBER"}
+              placeholder={"MESSAGE"}
               InputProps={{
                 disableUnderline: true,
                 classes: {
-                  root: classes.userInfoRoot,
+                  root: classes.contactRoot,
                   input: classes.textFieldInput
                 }
               }}
             />
+            <div className="submit">
+              <h3>SUBMIT</h3>
+            </div>
           </div>
         </div>
       </div>
