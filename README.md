@@ -1,1 +1,3 @@
-# john_deere_app_frontend
+```
+John Deere Competition
+```
