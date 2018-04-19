@@ -1,17 +1,17 @@
 export default theme => ({
   button: {
     borderRadius: 5,
-    width: `13em`,
+    width: `27em`,
     lineHeight: `2.5em`,
-    borderColor: "#1228aa",
-    borderWidth: 1,
-    borderStyle: "solid"
+    border: "none",
+    margin: "0 auto"
   },
   cancelButton: {
-    marginRight: 40,
+    
     background: "linear-gradient(to right, #fdde33, #7bc556)",
     color: "white",
     fontSize: "1rem",
+    fontFamily:"'Abel', sans-serif",
     "&:hover": {
       backgroundColor: "#f9f9f9"
     }
@@ -21,13 +21,17 @@ export default theme => ({
     border: "1px solid #ced4da",
     fontSize: 16,
     padding: "10px 12px",
+    color: "#FFF",
+    fontFamily: "'Abel', sans-serif",
     "&:focus": {
-      borderColor: "black",
+      borderColor: "#fdde33",
       boxShadow: "0"
+    },
+    "&:placeholder": {
+      color: "#FFF"
     }
   },
   userInfoRoot: {
-    marginLeft: 20,
     marginBottom: "1rem",
     width: `27em`,
     "label + &": {
